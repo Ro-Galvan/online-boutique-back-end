@@ -17,14 +17,14 @@ Category.hasMany(Product, {  //if hasMany phrase is next to it, it is the most i
   )
 // Products belongToMany Tags (through ProductTag)
 Product.belongsToMany(Tag, {
-  foreignKey: 'tag_id' //might need to change to through: 'ProductTag'
+  through: 'ProductTag' //might need to change to through: 'ProductTag' OR  foreignKey: 'tag_id'
 });
 //to  get 2 things to belong to each other, where neither one is primary you have to do through table.where products and tags meet
 
 // Tags belongToMany Products (through ProductTag)
 Tag.belongsToMany(Product, {
-  foreignKey: 'tag_id'
-  // through: 'ProductTag'
+  through: 'ProductTag'
+  // foreignKey: 'tag_id'
 });
 
 module.exports = {

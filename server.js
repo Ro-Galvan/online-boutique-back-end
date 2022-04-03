@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));  //DONT FORGET TO CHANGE BACK!!
+app.use(express.urlencoded({ extended: false }));  //DONT FORGET TO CHANGE BACK to true!!
 
 app.use(routes);
 
@@ -21,4 +21,3 @@ app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}!`);
 });
 });
-
