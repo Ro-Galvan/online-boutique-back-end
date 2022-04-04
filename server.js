@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));  //DONT FORGET TO CHANGE BACK to true!!
+app.use(express.urlencoded({ extended: false }));  //DONT FORGET TO CHANGE BACK to true!!
 
 app.use(routes);
 

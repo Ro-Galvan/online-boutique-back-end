@@ -12,7 +12,8 @@ Product.belongsTo(Category, {
 
 // Categories have many Products
 Category.hasMany(Product, {  //if hasMany phrase is next to it, it is the most important one than belong
-  foreignKey: 'category_id'
+  foreignKey: 'product_id',
+  onDelete: 'CASCADE',
 }
   )
 // Products belongToMany Tags (through ProductTag)
