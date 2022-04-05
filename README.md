@@ -6,6 +6,7 @@
 [link to GitHub repository](https://github.com/Ro-Galvan/company-employee-database)
 
 [video demo -part 1](https://drive.google.com/file/d/1CjkbMLSsXomKh0J0M-JwLi4FBkwEFQuy/view)
+
 [video demo -part 2](https://drive.google.com/file/d/1SgNUkeXrUg-Zm3wOfCM9FcmYfhHUVzLd/view)
 
 # Table of Contents
@@ -21,7 +22,7 @@
 - express
 - In the terminal run `mysql -u root` or `mysql -u root -p` (if you have a password) then enter `SOURCE db/schema.sql;` then `quit`
 - To seed the database, from the terminal, `run npm seed` then `run npm watch`
-- You can then go to insomnia and set up your routes to test everything
+- You can then go to Insomnia and set up your routes to test everything
 
 # Usage
 ![Insomnia setup](./assets/insomnia-screenshot.jpg)
